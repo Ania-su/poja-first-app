@@ -13,7 +13,7 @@ public class ArithService {
             throw new IllegalArgumentException("a and b cannot be null");
         }
         if (a < 0 || b < 0) {
-            throw new IllegalArgumentException("a and b cannot be negative");
+            errors.add("a and b cannot be negative");
         }
         if (b == 0) {
             errors.add("nonsense to provide b as 0");
